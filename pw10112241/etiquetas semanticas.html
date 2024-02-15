@@ -4,15 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        h1{
+            color: rgb(64, 0, 255);
+        }
+        header {
+            background-color: lightblue;
+        }
+        header nav ul li{
+            /*border: 1px solid red; */
+            border-radius: 5px;
+            display: inline-block;  /*abarca todo el contenido en una linea si cabe el li hasta que quepan*/
+        }
+        /* el display por determinado esta en block (Que jala toda la pantalla) */
+        /* jugar con los margenes */
+
+        header nav ul li:hover{ /* cuando le pasa el mouse por encima */
+            background-color: blue;
+            color: red;
+        }
+    </style>
+    <!-- ESTRUCTURA, ESTILO Y COMPORTAMIENTO VA EN DIFERENTES LUGARES
+        NO EN UN SOLO ARCHIVO
+    -->
 </head>
 <body>
     <header>
         <img src="logo.jpg" alt="logo">
-        <h1>Titulo de pagina</h1>
+        <h1>Titulo de pagina pw
+        </h1>
         <nav>
-            <ul>
-                <li>Opciones</li>
-                <li>Opciones</li>
+            <ul>   
+                <!-- seguir el orden jerarquico header nav ul li EN EL STYLE -->
+                <li>Inicio</li>
+                <li>Archivo</li>
+                <li>Guardar</li>
+                <li>Nosotros</li>
+                <li>Salir Para afuera</li>
             </ul>
         </nav>
     </header>
@@ -36,8 +64,27 @@
             puede ir en cualquier parte un aside tambien puede ir afuera del main
         </aside>
     </main>
+    
     <footer>
         Contacto - telefonos - direccion - @copy; 2024 - acerca de....
+        <ul>
+            <ul>
+                <li>comand option y flecha</li>
+                <li>comand option y flecha</li>
+                <li>comand option y flecha</li>
+                <li>comand option y flecha</li>
+            </ul>
+        </ul>
+        <!-- comentario command / -->
+        <!-- main>section>article*2
+        section.noticias
+        section#inicio -->
+    
+        <!-- extensiones live server, css, auto rename tag, material icon theme -->
+        <!-- Comentario sobre cambios hechos, fechas, correos....ser responsables con la informacion
+            puede involucrar dinero y personas
+        -->
+
     </footer>
 </body>
 </html>
