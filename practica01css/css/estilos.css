@@ -1,0 +1,19 @@
+/* la etiqueta general es body 
+    las letras por defecto tienen un tamanio de 16px que es igual a 1em
+*/
+body{
+    border: 1px solid red;
+    font-size: 16px; /*que sea a fuerza 16 independientemente de la configuracion del usuario*/
+    margin: 0px auto; /* negativos se acerca mas a la pared positivo se aleja */
+    max-width: 1024px;
+
+}
+
+header{
+    background: #D1E3EE;
+    
+}
+#logo{
+    margin: -150px 0px 0px 0px;    
+    /* margin-top: -150px; */
+}
