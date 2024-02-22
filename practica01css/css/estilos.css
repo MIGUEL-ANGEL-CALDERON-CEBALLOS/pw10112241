@@ -13,6 +13,40 @@ header{
     background: #D1E3EE;
     
 }
+header nav{
+    background: #026dc6;
+    /* 5px de redondeo es lo usual */
+    border-radius: 5px;
+    /* para centrar */
+    margin: 0px auto; 
+    /* para que crezca 2px de arriba y abajo internamente */
+    padding: 2px 0px; 
+    width: 99%;
+
+}
+header nav form{
+    /* para mandarlos a la derecha */
+    float: right;
+    /* hacer margen con la barra azul del nav */
+    margin-right: 10px;
+    /* para subir el boton y el input */
+    margin-top: -35px;
+}
+header nav form input{
+    border-radius: 5px;
+}
+header nav form input[type="submit"]{ /* las llaves van pegadas al input */
+    background: green;
+    border: 1px solid green; /* en vez de quitar el borde, lo pintamos del mismo color */
+    color: white;
+}
+header nav ul li{
+    /* border: 1px solid red; */
+    color: white;
+    display: inline-block;
+    margin-right: 20px;
+
+}
 #logo{
     margin: -150px 0px 0px 0px;    
     /* margin-top: -150px; */
