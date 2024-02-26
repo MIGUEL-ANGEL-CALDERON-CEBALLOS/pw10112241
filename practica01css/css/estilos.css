@@ -51,3 +51,49 @@ header nav ul li{
     margin: -150px 0px 0px 0px;    
     /* margin-top: -150px; */
 }
+#seccion01{
+    /* alejarlo del header poniendole postivo */
+    margin-top: 15px;
+}
+#seccion01 article{
+    /* centrar todo lo que esta dentro del article */
+    text-align: center;
+}
+#seccion01 article img{
+    /* acerla mas grande y solo el ancho para no descuadrar la imagen es como jalarla de una esquina*/
+    border: 5px solid rgba(150, 150, 150, 0.3); /* el ultimo atributo es transparencia*/
+    width: 98%;
+}
+#seccion02 article{
+    /* modificar los 3 article */
+    display: inline-block;
+    /* las alineaciones de las cajas va a ser hacia arriba */
+    vertical-align: top;
+    /* cuidado con los margenes predeterminados: POR ESO NO PONER EXACTO (aqui 33%) */
+    width: 32.8%;
+}
+/* ASI NO
+section article input[type="submit"]{ /* las llaves van pegadas al input */
+    
+ /*   border: 1px solid gray; 
+   /* color: blue;
+    vertical-align: middle;
+} */
+#seccion02 article input[type="submit"]{
+    background: white;
+    border-radius: 5px;
+    color: blue;
+    margin-left: 35%; /* o 130px  porque el body tiene 1024px las tablets y celulares es recomendable ese ancho*/
+    
+}
+/* las clases llevan . */
+.nito{ /* con una sola clase afecto 3 cosas */
+    font-weight: bold; /* negritas */
+}
+.otraSeccion{
+    font-size: 2.5em;
+}
+.unaSeccion{
+    font-size: 4.5em; /* 4.5 x 16px */
+
+}
