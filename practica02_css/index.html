@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Práctica 02 CSS</title>
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
     <header>
         <img src="img/banner.png" alt="Linea">
-        <img src="img/granthams.png" alt="Granthams">
-        <img src="img/paint.png" alt="Pintura">
+        <img src="img/granthams.png" id="granthams" alt="Granthams">
+        <img src="img/paint.png" id="paint" alt="Pintura">
         <input type="search" placeholder="Search" size="25">
         <!-- que aguante 25 caracteres nomas ******* size="25" -->
         <!-- nav>ul>li*5 -->
@@ -24,12 +25,12 @@
         </nav>
     </header>
 
-    <section>
-        <article>
+    <section id="primerseccion">
+        <article id="secc01art01">
             <img src="img/slide.jpg" alt="slide">
         </article>
-        <article>
-            We can offer
+        <article id="secc01art02">
+            <span class="letragrande colorrosa nito">We can offer</span>
             <!-- ul>li*8 -->
             <!-- El nav solo es para menus no para listas normales -->
             <ul>
@@ -43,43 +44,45 @@
                 <li>Great Customer service</li>
             </ul>
         </article>
-        <img src="img/bg_offer.png" alt="Ofertas">
+        <img src="img/bg_offer.png" id="bgoffer" alt="Ofertas">
+        <!-- porque lleva id esta imagen? -->
     </section>
 
-    <section>
+    <section id="segundaseccion">
         <article>
-            01772 250207
+            <span class="letramediana colorrosa nito">01772 250207</span>
         </article>
     </section>
 
-    <section>
+    <section id="terceraseccion">
         <article>
             <img src="img/cerdito.png" alt="Cerdito">
+            <span class="colorrosa nito">Save this spring</span>
             <br>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt qui officia possimus ipsam. Nisi facere, quo quos ipsa inventore suscipit alias earum, corporis id assumenda vel cumque obcaecati tempore adipisci.
             <!-- linea y media mas para abajo en el salto de parrafo en vez del <br> -->
             <p></p>
-            Find out more..
+            <span class="colorrosa">Find out more..</span>
         </article>
         
         <article>
             <img src="img/hoja.png" alt="Hoja">
-            Eco Friendly
+            <span class="colorverde nito">Eco Friendly</span>
             <br>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates incidunt at quo dolorum consectetur eligendi cum suscipit minima laudantium fugit. Dicta, itaque laboriosam. Illo non ea veniam, ducimus ad cum!
         </article>
         
         <article>
             <img src="img/new.png" alt="Nuevo">
-            Upload your file
+            <span class="colorazul nito">Upload your file</span>
             <br>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam porro impedit laudantium voluptas dolore facilis reprehenderit recusandae! Nihil assumenda, corrupti aliquam quam sint quibusdam amet! Odit reiciendis aspernatur aut culpa!
             <p></p>
-            Upload your File Now..
+            <span class="colorazul">Upload your File Now..</span>
         </article>
 
         <article>
-            Stay in touch
+            <span class="letramediana colorrosa">Stay in touch</span>
             <br>
             Join our mailing list today 
             <input type="email" placeholder="Email goes here">

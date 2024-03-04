@@ -1,0 +1,36 @@
+body{
+    font-size: 16px; /* 1em */
+    margin: 0px auto; /* para centrar */
+    max-width: 1078px; /* debido a el ancho del png pero lo recomendable es 1024*/
+    min-width: 1078px; /* tamanio minimo */
+}
+header input{ /* afecta a todos los input dentro del header pero aqui hay uno */
+    float: right;
+    /* quitar o ponerle pixeles de donde este mas cerca */
+    margin-right: -200px; /* esta mas cerca de la derecha */
+    margin-top: 15px;
+}
+header nav{
+    /* centrar el nav */
+    /* border: 1px solid red; truco para ver las cajas */
+    /* text-align: center;  PORQUE ESTE ESTABA MAL? */
+    margin-left: 220px; /* mueve toda la caja del nav para que quede centrado */
+}
+header nav ul li{ /* solo afecta lo que esta mas a la derecha (li) lo demas es solo de ruta*/
+    border-bottom: 1px solid gray; /* borde de la caja hacia abajo */
+    color: gray;
+    display: inline-block;
+    font-size: 1.8em;
+    margin-right: 15px;
+    padding-bottom: 2px; /* espacio entre la caja y el fondo de la caja*/
+    /* text-decoration: underline; */
+
+}
+#granthams{
+    margin-left: 25px;
+    margin-top: 25px;
+    /* margin: 25px 0px 0px 25px; */
+}
+#paint{
+    float: right; /* mover a la derecha la foto de pintura */
+}
