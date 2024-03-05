@@ -26,6 +26,11 @@ header nav ul li{ /* solo afecta lo que esta mas a la derecha (li) lo demas es s
     /* text-decoration: underline; */
 
 }
+#bgoffer{
+    left: -35px;
+    position: relative; /* relativa de la pantalla para mover cualquier elemento con x, y sin margenes YA NO DENTRO DE SU CAJA*/
+    top: -410px;
+}
 #granthams{
     margin-left: 25px;
     margin-top: 25px;
@@ -33,4 +38,48 @@ header nav ul li{ /* solo afecta lo que esta mas a la derecha (li) lo demas es s
 }
 #paint{
     float: right; /* mover a la derecha la foto de pintura */
+}
+#primerseccion{
+    /* border: 1px solid blue; */
+    /* poner la seccion del tamanio de la imagen inspeccionando la pagina y sacando la altura*/
+    height: 318px;
+    margin-top: 60px; /* ya quedo por debajo de la mancha del paint */
+}
+#primerseccion article{ /* porque el article? */
+    display: inline-block;
+    /* no se centran porque los dos articles usan el 100% */
+    vertical-align: top;
+}
+#secc01art01{
+    /* border: 1px solid red; */
+    width: 61%; /* la suma de todos los articles no debe de dar el 100 por margenes y asi*/
+}
+#secc01art02{
+    /* border: 1px solid red; */
+    margin-left: 50px;
+    width: 31%; 
+}
+#secc01art02 ul{
+    /* quitar el punto negro predeterminado*/
+    list-style: none;
+}
+#secc01art02 ul li:before{
+    /* modificar los li [antes del texto]*/
+    color: #ff0099;
+    content: "• ";
+}
+.colorazul{
+    color: #4267b3;
+}
+.colorrosa{
+    color: #ff0099;
+}
+.colorverde{
+    color: #8bc500;
+}
+.letragrande{
+    font-size: 3.5em; /* 3.5*16 */
+}
+.nito{
+    font-weight: bold;
 }
