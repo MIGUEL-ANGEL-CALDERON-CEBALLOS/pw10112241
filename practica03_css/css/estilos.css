@@ -1,0 +1,28 @@
+/* librerias a descargar auto rename tag, html css support, live server, material icon theme; spanish language pack */
+html{
+    --color-verde: #849c3c; /* custom propiety o variable EL DOBLE GUION ES OBLIGATIORIO*/
+    --color-negro: #353535;
+    --color-rojo: #d33040;
+    --color-gris: lightgray; 
+}
+body{
+    font-size: 16px;
+    margin:0px auto; /* centralo en la pantalla */
+    max-width: 1024px;
+}
+header ul li{
+    display: inline-block;
+    width: 17%; /* porque son 5 elementos */
+}
+header ul li:nth-child(2){ /* para modificar el segundo elemento de la lista */
+    background: var(--color-verde);
+}
+header ul li:nth-child(3){ 
+    background: var(--color-negro);
+}
+header ul li:nth-child(4){ 
+    background: var(--color-rojo);
+}
+header ul li:nth-child(5){ 
+    background: var(--color-gris);
+}

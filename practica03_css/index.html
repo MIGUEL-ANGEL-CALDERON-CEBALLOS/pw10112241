@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practica 03 CSS</title>
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
     <header>
@@ -12,10 +13,10 @@
                 <li>
                     <input type="Search" placeholder="Search">
                 </li>
-                <li>TRADE</li>
-                <li>REAL STATE</li>
-                <li>TOURISM</li>
-                <li>IT TECHNOLOGIES</li>
+                <li class="letra-blanca">TRADE</li>
+                <li class="letra-blanca">REAL STATE</li>
+                <li class="letra-blanca">TOURISM</li>
+                <li class="letra-gris">IT TECHNOLOGIES</li>
             </ul>
         </nav>
     </header>
@@ -24,49 +25,55 @@
         <article>
             <img src="img/gu_logo.png" alt="Logo GU">
             <ul>
-                <li>HOME</li>
-                <li>ABOUT US</li>
-                <li>NEWS</li>
-                <li>PARTNERS</li>
-                <li>CONTACT</li>
+                <li class="letra-blanca tam-men-lateral">HOME</li>
+                <li class="letra-gris tam-men-lateral">ABOUT US</li>
+                <li class="letra-gris tam-men-lateral">NEWS</li>
+                <li class="letra-gris tam-men-lateral">PARTNERS</li>
+                <li class="letra-gris tam-men-lateral">CONTACT</li>
             </ul>
         </article>
         <article>
-            EXPORT AND IMPORT OF GOODS
+            <span class="letra-blanca tam-tarjetas">EXPORT AND IMPORT OF GOODS</span>
             <p></p>
-            GUG assists companies interested
-            in export of product from Georgia
-            or in import goods on Geordlan Market
+            <span class="letra-blanca">
+                GUG assists companies interested
+                in export of product from Georgia
+                or in import goods on Geordlan Market
+            </span>
             <P></P>
-            MORE ON TRADE
+            <span class="letra-blanca">MORE ON TRADE</span>
         </article>
         <article>
-            INVEST IN REAL ESTATE DISCOVER IN GEORGIA
+            <span class="letra-gris tam-tarjetas">INVEST IN REAL ESTATE DISCOVER IN GEORGIA</span>
             <p></p>
-            GUG works with number of real
-            estate companies and property
-            developers in order to assist
-            individuals or companies
+            <span class="letra-gris">
+                GUG works with number of real
+                estate companies and property
+                developers in order to assist
+                individuals or companies
+            </span>
             <p></p>
-            MORE ON REAL ESTATE
+            <span class="letra-blanca">MORE ON REAL ESTATE</span>
         </article>
         <article>
-            SO MUCH TO DISCOVER
+            <span class="letra-blanca tam-tarjetas">SO MUCH TO DISCOVER</span>
             <P></P>
-            Our tourist company provides its
-            clients with quality services and
-            highly competitive prices could be
-            found on Georgian tounsm markel
-            today
+            <span class="letra-blanca">
+                Our tourist company provides its
+                clients with quality services and
+                highly competitive prices could be
+                found on Georgian tounsm markel
+                today
+            </span>
             <p></p>
-            MORE OF TOURISM
+            <span class="letra-blanca">MORE OF TOURISM</span>
         </article>
         <article>
-            SPREADING INNOVATIONS IN ICT SECTOR
+            <span class="letra-gris tam-tarjetas">SPREADING INNOVATIONS IN ICT SECTOR</span>
             <p></p>
-            Introduction of innovative ICT technologies on Georgian market and poromotion or Investments In C sector
+            <span class="letra-gris">Introduction of innovative ICT technologies on Georgian market and poromotion or Investments In C sector</span>
             <p></p>
-            MORE ON ICT TECHNOLOGIES
+            <span class="letra-blanca">MORE ON ICT TECHNOLOGIES</span>
         </article>
     </section>
 
@@ -74,54 +81,60 @@
         <article>
             <img src="img/news_rojo.png" alt="News">
             <hr> <!-- linea horizontal -->
-            Tuesday 2010
+            <span class="letra-gris">Tuesday 2010</span>
             <p></p>
-            <span>Visit of Dutch Health to Georgia</span>
-            On February 21-23 2010, delegations of
-            Israeli group of investors and "Dutch Health"
-            company visited Georgia, with interest to
-            explore Health care system projects, clinics,
-            nosas Insuran comans an
-            Diagnostic centers. Parties met with goverment
+            <span class="letra-blanca">Visit of Dutch Health to Georgia</span>
+            <br>
+            <span class="letra-gris">
+                On February 21-23 2010, delegations of
+                Israeli group of investors and "Dutch Health"
+                company visited Georgia, with interest to
+                explore Health care system projects, clinics,
+                nosas Insuran comans an
+                Diagnostic centers. Parties met with goverment
+            </span>
             <p></p>
-            <span>Read more</span>
+            <span class="letra-blanca read-more">Read more</span>
+            <!-- el read-more es para alinearlo a la derecha -->
         </article>
         <article>
             <img src="img/news_verde.png" alt="Links">
             <hr>
             <p></p>
-            Getsadze & pateishvili <br>
-            Doheny Global Group <br>
-            Unomobi inc. <br>
-            Munir Sukhtian Group <br>
-            Global Capital Associates
+            <span class="letra-gris">
+                Getsadze & pateishvili <br>
+                Doheny Global Group <br>
+                Unomobi inc. <br>
+                Munir Sukhtian Group <br>
+                Global Capital Associates
+            </span>
             <p></p>
-            Read more
+            <span class="letra-blanca read-more">Read more</span>
         </article>
         <article>
             <img src="img/news_claro.png" alt="Contact">
             <hr>
-            <span>Send a message</span>
+            <span class="letra-blanca">Send a message</span>
             <p></p>
             <!-- para que quede con la alineacion de completo se pone una tabla -->
             <table>
                 <tbody>
                     <tr>
-                        <td>Tel:</td>
-                        <td>+995 591 197 791</td>
+                        <td class="letra-gris">Tel:</td>
+                        <td class="letra-blanca">+995 591 197 791</td>
                     </tr>
                     <tr>
-                        <td>Fax:</td>
-                        <td>(995 32) 29 14 40</td>
+                        <td class="letra-gris">Fax:</td>
+                        <td class="letra-blanca">(995 32) 29 14 40</td>
                     </tr>
                     <tr>
-                        <td>Email:</td>
-                        <td>info@globalunigroup.ge</td>
+                        <td class="letra-gris">Email:</td>
+                        <td class="letra-azul">info@globalunigroup.ge</td>
                     </tr>
                 </tbody>
             </table>
             <p></p>
-            <span>Read more</span>
+            <span class="letra-blanca read-more">Read more</span>
         </article>
     </footer>
 </body>
