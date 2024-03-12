@@ -4,14 +4,51 @@ html{
     --color-negro: #353535;
     --color-rojo: #d33040;
     --color-gris: lightgray; 
+    --fondo-negro: #2c2c2c;
+    --color-linea: #949494;
+    --color-azul: lightblue;
+    --color-blanco: white;
 }
 body{
     font-size: 16px;
     margin:0px auto; /* centralo en la pantalla */
     max-width: 1024px;
 }
+/* body section NO */
+section article{
+    display: inline-block;
+    height: 280px;
+    padding: 18px 8px;
+    vertical-align: top;
+    width: 17.9%;
+}
+section article ul{
+    list-style: none;    /* para quitar los puntos de la lista */
+}
+section article:nth-child(2){
+    background: var(--color-verde);
+}
+section article:nth-child(3){
+    background: var(--color-negro);
+}
+section article:nth-child(4){
+    background: var(--color-rojo);
+}
+section article:nth-child(5){
+    background: var(--color-gris);
+}
+section,footer{
+    /* afecta a los dos por la , */
+    background: var(--fondo-negro);
+}
+section img{
+    width: 150px;
+}
 header ul li{
     display: inline-block;
+    padding: 8px 14px; /* para agrandar las cajas de los li */
+    margin-left: -10px;
+    text-align: center;
     width: 17%; /* porque son 5 elementos */
 }
 header ul li:nth-child(2){ /* para modificar el segundo elemento de la lista */
@@ -25,4 +62,19 @@ header ul li:nth-child(4){
 }
 header ul li:nth-child(5){ 
     background: var(--color-gris);
+}
+.letra-azul{
+    color: var(--color-azul);
+}
+.letra-blanca{
+    color: var(--color-blanco);
+}
+.letra-gris{
+    color: var(--color-linea);
+}
+.tam-menu-lateral{
+    font-size: 1.1em;
+}
+.tam-tarjetas{
+    font-size: 1.7em;
 }
