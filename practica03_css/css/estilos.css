@@ -27,6 +27,8 @@ section article ul{
 }
 section article:nth-child(2){
     background: var(--color-verde);
+    /* margin-left: 10px; */
+    /* padding: 0px 30xp; */
 }
 section article:nth-child(3){
     background: var(--color-negro);
@@ -44,12 +46,30 @@ section,footer{
 section img{
     width: 150px;
 }
-header ul li{
+footer article{
     display: inline-block;
-    padding: 8px 14px; /* para agrandar las cajas de los li */
+    margin-top: 20px;
+    padding: 10px; /* margen interno y ya no queda pegado en ningun lado MAS OJO CON ESTO */
+    vertical-align: top;
+    width: 31%;
+}
+footer img{
+    width: 300px;
+}
+header ul{  /* esta linea no estaba */
+    /* margin-left: -25px; */
+}
+header ul li{
+    /* border: 1px solid red; */
+    display: inline-block;
+    padding: 8px 17px; /* para agrandar las cajas de los li */
     margin-left: -10px;
     text-align: center;
-    width: 17%; /* porque son 5 elementos */
+    width: 18%; /* porque son 5 elementos */
+}
+header ul li:nth-child(1){
+    /* border: 1px solid red; */
+    margin-left: -50px;
 }
 header ul li:nth-child(2){ /* para modificar el segundo elemento de la lista */
     background: var(--color-verde);
@@ -63,6 +83,10 @@ header ul li:nth-child(4){
 header ul li:nth-child(5){ 
     background: var(--color-gris);
 }
+hr{
+    border-style: dashed;
+    color: var(--color-linea);
+}
 .letra-azul{
     color: var(--color-azul);
 }
@@ -71,6 +95,11 @@ header ul li:nth-child(5){
 }
 .letra-gris{
     color: var(--color-linea);
+}
+.read-more{
+    /* border: 1px solid red; */
+    /* float: right; */
+    margin-left: 220px;
 }
 .tam-menu-lateral{
     font-size: 1.1em;
