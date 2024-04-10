@@ -1,5 +1,105 @@
+html{
+    --color-verde: #849c3c; 
+    --color-gris: gray; 
+}
 body{
     font-size: 16px;
     margin:0px auto; 
     max-width: 1024px;
+}
+header nav{
+    margin-top: -100px;
+    margin-left: -35px; 
+}
+header nav ul li{
+    border: 1px solid red; 
+    display: inline-block;
+    /* padding: 0px 17px; para agrandar las cajas de los li */
+    padding-right: 17px;
+    /* margin-left: -10px; */
+     /* margin-top: -50px; ESTO NO VA AQUI PORQUE DEBE AGARRAR TODO EL NAV */
+    margin-bottom: 50px;
+    text-align: center;
+    width: 5%; /* porque son 5 elementos */
+}
+hr{
+    border-style: dashed;
+}
+
+footer article{
+    border: 1px solid #ff0000;
+    /* padding-right: 2px; */
+    vertical-align: top;   /* con esto lo alineo al techo de la caja */
+    margin-right: 10px;
+    margin-bottom: 20px;
+    display: inline-block;
+    width: 18%;
+}
+
+
+
+#cuerpo{
+    display: inline-block;
+    vertical-align: auto;
+}
+#bici{
+    display: inline-block;
+    margin-left: 600px; /* porque con 50px se mueve la caja azul a la izquierda */
+    border: 1px solid #ff0000;
+    /*margin-bottom: 500px; /* PORQUE ESTE ESTA MAL? */
+    margin-top: -520px;
+    width: 30%;
+}
+#imagenBici{
+    border: 1px solid blue;
+    margin-left: 50px;
+}
+#videos{
+    border: 1px solid black;
+    width: 60%;
+}
+#video1{
+    width: 45%;
+    /*PORQUE SIN ESTOS LA IMAGEN DE LA BICI NO DA HASTA ARRIBA */
+}
+#video2{
+    width: 45%;
+}
+
+
+#circulos{
+    display: inline-block;
+    border: 1px solid #ff0000;
+    margin-left: 800px;
+    font-size: 2em;
+    /* margin-top: -50px; */
+}
+#shop{
+    display: inline-block;
+    margin-left: 850px;
+    margin-top: -50px;
+    border: 1px solid #ff0000;
+}
+.grande{
+    font-size: 5em;
+}
+.nito{
+    font-weight: bold;
+}
+.gris{
+    color: var(--color-gris);
+}
+.verde{
+    color: var(--color-verde);
+}
+#final{
+    vertical-align: top;
+}
+.redes{
+    border: 1px solid #ff0000;
+    /* padding-bottom: 10px; */
+    margin-top: -30px;
+}
+#rosa{
+    margin-left: 750px;
 }
