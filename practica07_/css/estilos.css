@@ -1,0 +1,19 @@
+body{
+    font-size: 16px; /* 1em */
+    margin: 0px auto; /* para centrar */
+    max-width: 1024px;
+}
+header{
+    background-color: darkcyan;
+}
+header ul{
+    margin-left: 700px;
+    margin-top: -20px;
+}
+header ul li{
+    display: inline-block;
+    padding-right: 5px;
+}
+#seccion01{
+    background-color: darkcyan;
+}
