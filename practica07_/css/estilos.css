@@ -4,7 +4,11 @@ body{
     max-width: 1024px;
 }
 header{
-    background-color: darkcyan;
+    background-color: #1f2837;
+    padding-bottom: 50px;
+}
+header img{
+    vertical-align: middle;
 }
 header ul{
     margin-left: 700px;
@@ -13,7 +17,21 @@ header ul{
 header ul li{
     display: inline-block;
     padding-right: 5px;
+    color: white;
 }
 #seccion01{
-    background-color: darkcyan;
+    background-color: #1f2837;
+    text-align: center;
+}
+#seccion01 img{
+    padding: 10px;
+    background: white;
+    /* text-align: center;  PORQUE AQUI NO SE CENTRA LA IMAGEN Y ARRIBA SI*/
+    margin-bottom: -50px;
+}
+.blanco{
+    color: white;
+}
+.nito{
+    font-weight: bold;
 }
