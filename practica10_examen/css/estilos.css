@@ -1,0 +1,88 @@
+body{
+    /* border: 1px solid red; */
+    font-size: 16px; /*que sea a fuerza 16 independientemente de la configuracion del usuario*/
+    margin: 0px auto; /* negativos se acerca mas a la pared positivo se aleja */
+    max-width: 1024px;
+}
+
+
+header{
+    display: inline-block;
+    /* border: 1px solid black; */
+    margin-bottom: 100px;
+}
+header nav{
+    margin-left: 300px;
+    margin-top: -50px;
+    /* border: 1px solid red; */
+    
+}
+header nav ul li{
+    display: inline-block;
+    padding-right: 30px;
+}
+/* #seccion02 article input[type="submit"]{  */
+header article{
+    margin-left: 860px;
+    display: inline-block;
+    /* margin-top: -100px; */
+    margin-top: -50px;
+    position: absolute;
+} 
+#seccion01{
+    display: inline-block;
+    margin-bottom: 100px;
+}
+#art01sec01{
+    width: 65%;
+    /* border: 1px solid black; */
+}
+#art02sec01{
+    width: 20%;
+    margin-left: 700px;
+    margin-top: -290px;
+    /* border: 1px solid orange; */
+}
+#seccion02 article{
+    display: inline-block;
+    width: 23%;
+    vertical-align: top;
+    margin-top: 60px;
+}
+
+#seccion01 article input[type="text"]{
+    padding-right: 400px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+}
+header article input{
+    margin-bottom: 30px;
+}
+header article input[type="submit"]{
+    margin-bottom: 30px;
+}  
+
+.grande{
+    font-size: 4em;
+}
+.nito{
+    font-weight: bold;
+}
+.mediano{
+    font-size: 1.5em;
+}
+.botonRojo{
+    border: 1px solid red;
+    border-radius: 5px;
+    background: red;
+    color: white;
+    padding: 10px;
+}
+.botonBlanco{
+    border: 1px solid red;
+    border-radius: 5px;
+    background: white;
+    color: red;
+    padding: 10px;
+}
