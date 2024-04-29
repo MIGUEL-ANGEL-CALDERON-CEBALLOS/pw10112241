@@ -2,10 +2,15 @@
 //npm install
 //cd /Users/ccdm04/Desktop/pw10112241/proyecto/backend
 //PA QUE ERA ESTO
-//$ cd /Applications/XAMPP/xamppfiles/bin
+//$ cd /Applications/XAMPP/xamppfiles/bin   
 //$ ./mysql -h localhost -u root -p
+//para manipular la BD los DOS COMANDOS ANTERIORES
 //PS1="$ "
 //borrar carpeta de modulos rm -rf node_modules
+
+
+///http://localhost:3000/api/clientes
+//http://localhost:3000/api/clientes/12 <-porque el 12
 
 let express = require('express');
 let mysql = require('mysql');
@@ -48,6 +53,17 @@ app.get('/api/clientes', (req,res)=>{
     });
 });
 // json formatter  localhost:3000/api/clientes
+
+//Seleccionamos un cliente en especifico
+app.get('/api/clientes/:id', (req,res)=>{
+    conexion.query('SELECT * FROM clientes WHERE id=?', [req.params.id],(error, fila)=>{
+        if(error){
+            throw error;
+        }else{
+            res.send(fila);
+        }
+    }) //el signo de ? se llama PARAMETRO PENDIENTE
+});
 
 //Encender servidor
 let puerto = 3000;
