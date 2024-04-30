@@ -8,9 +8,14 @@
 //PS1="$ "
 //borrar carpeta de modulos rm -rf node_modules
 
+//una api si devuelve algo
+//POSTMAN
+
 
 ///http://localhost:3000/api/clientes
 //http://localhost:3000/api/clientes/12 <-porque el 12
+
+//command t para abrir una nueva pestana y no cerrar el servidor
 
 let express = require('express');
 let mysql = require('mysql');
@@ -55,6 +60,7 @@ app.get('/api/clientes', (req,res)=>{
 // json formatter  localhost:3000/api/clientes
 
 //Seleccionamos un cliente en especifico
+//en el navegador todos son un GET
 app.get('/api/clientes/:id', (req,res)=>{
     conexion.query('SELECT * FROM clientes WHERE id=?', [req.params.id],(error, fila)=>{
         if(error){
@@ -63,6 +69,41 @@ app.get('/api/clientes/:id', (req,res)=>{
             res.send(fila);
         }
     }) //el signo de ? se llama PARAMETRO PENDIENTE
+});
+
+app.delete('/api/clientes/:id',(req,res) =>{
+    let id = req.params.id;
+    conexion.query('DELETE FROM clientes WHERE id=?',[id], (error,filas)=>{
+        if(error){
+            throw error;
+        }else{
+            res.send(filas);
+        }
+    });
+});
+
+//form action="" method="post" ... req.body
+//al hacer el SUBMIT se lleva lo del atributo name
+//insertar un nuevo cliente
+app.post('/api/clientes',(req,res)=>{
+    let data = {
+        id:req.body.id, 
+        nombre:req.body.nombre,
+        apellido:req.body.apellido,
+        direccion:req.body.direcion,
+        telefono:req.body.telefono,
+        rfc:req.body.rfc,
+        curp:req.body.curp,
+        cp:req.body.cp
+    }
+    let sql = "INSERT INTO clientes SET ?";
+    conexion.query(sql,data,(error,resultado)=>{
+        if(error){
+            throw error;
+        }else{
+            res.send(resultado);
+        }
+    });
 });
 
 //Encender servidor
