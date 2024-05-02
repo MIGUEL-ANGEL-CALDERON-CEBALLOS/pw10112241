@@ -1,11 +1,11 @@
-//node --watch app.js 
-//npm install
+//PS1="$ "
 //cd /Users/ccdm04/Desktop/pw10112241/proyecto/backend
+//npm install
+//node --watch app.js 
 //PA QUE ERA ESTO
 //$ cd /Applications/XAMPP/xamppfiles/bin   
 //$ ./mysql -h localhost -u root -p
 //para manipular la BD los DOS COMANDOS ANTERIORES
-//PS1="$ "
 //borrar carpeta de modulos rm -rf node_modules
 
 //una api si devuelve algo
@@ -88,7 +88,7 @@ app.delete('/api/clientes/:id',(req,res) =>{
 app.post('/api/clientes',(req,res)=>{
     let data = {
         id:req.body.id, 
-        nombre:req.body.nombre,
+        nombre:req.body.nombre,     //en postman para insertar es: BODY, RAW, JSON....SEND
         apellido:req.body.apellido,
         direccion:req.body.direcion,
         telefono:req.body.telefono,
@@ -104,6 +104,26 @@ app.post('/api/clientes',(req,res)=>{
             res.send(resultado);
         }
     });
+});
+
+//Actualizar
+app.put('/api/clientes/:id',(req,res)=>{
+    let id = req.params.id;         //solo el primero es .params
+    let nombre= req.body.nombre;
+    let apellido= req.body.apellido;
+    let direccion= req.body.direccion;
+    let telefono= req.body.telefono;
+    let rfc= req.body.rfc;
+    let curp= req.body.curp;
+    let cp= req.body.cp;
+    let sql="UPDATE clientes SET nombre=?, apellido=?, dirreccion=?, telefono=?, rfc=?, curp=?, cp=? WHERE id=?";
+    conexion.query(sql,[nombre, apellido, direccion, telefono, rfc, curp,cp,id],(error, resultado)=>{ //AL ULTIMO VA EL ID en el data
+        if(error){
+            throw error;
+        }else{
+            res.send(resultado);
+        }
+    });    
 });
 
 //Encender servidor
