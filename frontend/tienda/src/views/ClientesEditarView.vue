@@ -2,9 +2,9 @@
     <div class="container mt-5">
         <div class="card">
             <div class="card-header">
-                <h4>Agregar cliente</h4>
+                <h4>Editar cliente</h4>
                 <div v-if="mensaje==1" class="alert alert-primary" role="alert"> 
-                    Datos guardados con Exito
+                    Datos Actualizados con exito
                 </div>
             </div>
             <div class="card-body">
@@ -75,7 +75,7 @@ export default {
             /^([a-z]{3,4})(\d{2})(\d{2})(\d{2})([0-9a-z]{3})$/i
         );
         const curpRegex = new RegExp(
-            /^([A-Z][AEIOUX][A-Z]{2}\d{2}(?:0[1-9]|1[0-2])(?:0[1-9]|[12]\d|3[01])[HM](?:AS|B[CS]|C[CLMSH]|D[FG]|G[TR]|HG|JC|M[CNS]|N[ETL]|OC|PL|Q[TR]|S[PLR]|T[CSL]|VZ|YN|ZS)[B-DF-HJ-NP-TV-Z]{3}[A-Z\d])(\d)$/g
+            /^([A-Z][AEIOUX][A-Z]{2}\d{2}(?:0[1-9]|1[0-2])(?:0[1-9][12]\d|3[01])[HM](?:AS|B[CS]|C[CLMSH]|D[FG]|G[TR]|HG|JC|M[CNS]|N[ETL]|OC|PL|Q[TR]|S[PLR]|T[CSL]|VZ|YN|ZS)[B-DF-HJ-NP-TV-Z]{3}[A-Z\d])(\d)$/g
         );
         const cpRegex = new RegExp(
             /^[0-9]{5}$/
@@ -111,12 +111,22 @@ export default {
             }
         }
     },
+    mounted(){
+        this.getCliente(this.$route.params.id);
+    },
     methods: {
+        getCliente(clienteID){
+            axios.get('http://localhost:3000/api/clientes/'+clienteID).then(res=>{
+                this.model.cliente=res.data[0];
+                //this.model.cliente.id=res.data[0].id;
+                //this.model.cliente.nombre = res.data[0].nombre
+            });
+        },
         onTodoBien(){
             this.guardarCliente();
         },
         guardarCliente() {
-            axios.post('http://localhost:3000/api/clientes', this.model.cliente).then(res => {
+            axios.put('http://localhost:3000/api/clientes/'+this.$route.params.id, this.model.cliente).then(res => { //tomamos el id mediante la url por seguridad y no actualizar cosas que no son
                 if(res.data.affectedRows == 1){ //si insertamos 1 registro
                     //limpiar cuadros de texto
                     this.model.cliente = { //asignar este objeto a this.model.cliente
